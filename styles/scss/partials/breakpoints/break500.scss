@@ -1,0 +1,58 @@
+@media screen and (max-width: 500px){
+	.overlay {overflow-y: auto;}
+	.overlay a {font-size: 20px}
+	.overlay .closebtn {
+		font-size: 40px;
+		top: 15px;
+		right: 35px;
+	  }
+
+
+	  .text{
+	  	font-size: 1.3rem;
+	  	padding: 10px;
+	  	font-weight: bold;
+	  }
+
+	header img{
+		max-width: 60%;
+	}
+
+	  ul.main_nav{
+		display: none;
+	   li{
+	  	display: block;
+	  	width: 100%;
+	  }
+	}
+
+	#menu_button{
+		box-shadow: 0 -5px 20px #000;
+		display: block;
+		font-size: 1.3rem;
+		font-family: Verdana;
+		padding: 10px 0 10px 0;
+		font-weight: bolder;
+		text-transform: uppercase;
+		height: 30%;
+		background: #000;
+		letter-spacing: 3px;
+	}
+
+
+	form{
+		width: 100%;
+	}
+
+	section h3{
+		width: 100%;
+		font-size: 1rem;
+	
+	}
+
+	main img.model{
+		float: none;
+		width: 100%;
+		margin-right: 0;
+	}
+}

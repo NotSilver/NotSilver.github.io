@@ -1,0 +1,31 @@
+main img.model{
+	width: 33.1%;
+	// min-width: 33.2%;
+	height: auto;
+	border: 1px solid #313131;
+	display: block;
+	float: left;
+	margin-right: 0.2%;
+	margin-bottom: 3px;
+	.models{
+		width: 100%;
+	}
+}
+
+.project_container{
+	height: 15%;
+	width: 100%;
+	background:rgba(0,0,0,0.5);
+	padding: 5px;
+	margin-bottom: 8px;
+	text-align: center;
+	a{
+		text-decoration: none;
+		font-size: 1.5rem;
+		color: #fff;
+		cursor: pointer;
+		display: block;
+		height: 100%;
+		width: 100%;
+	}
+}

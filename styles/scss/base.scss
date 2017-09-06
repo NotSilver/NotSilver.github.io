@@ -1,0 +1,46 @@
+// @import 'partials/colors.scss';
+// @import 'partials/fontArrays.scss';
+// @import 'partials/mixins.scss';
+
+
+
+// RESET
+@import 'partials/lib/reset/reset.scss';
+
+
+
+// FIXES 
+@import 'partials/lib/boxSizing.scss';
+@import 'partials/whiteSpaceAndScrolling.scss';
+@import 'partials/lib/clearfix/clearfix.scss';
+
+// GLOBAL VALUES
+@import 'partials/globals.scss';
+
+
+// PAGE ELEMENTS STYLING
+
+	//-> ELEMENTS THAT ARE BEEING REUSED
+		@import 'partials/layout_elem/header_and_nav.scss';
+		@import 'partials/layout_elem/links_menu.scss';
+
+	//-> HOME PAGE
+		@import 'partials/layout_elem/about_me.scss';
+		@import 'partials/layout_elem/video.scss';
+		@import 'partials/layout_elem/acordion_triggers.scss';
+		@import 'partials/layout_elem/skillbar_setup.scss';
+		@import 'partials/layout_elem/skillbars_backgrounds.scss';
+
+	// -> PORTFOLIO PAGE
+		@import 'partials/layout_elem/project_containers.scss';
+	// -> CONTACT PAGE
+		@import 'partials/layout_elem/contact_contaainer.scss';
+	
+
+
+// BREAKPOINTS
+@import 'partials/breakpoints/break500.scss';
+
+
+
+
