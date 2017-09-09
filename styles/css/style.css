@@ -453,7 +453,7 @@ section h3 {
   color: #fff;
   letter-spacing: 1px; }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .overlay {
     overflow-y: auto; }
 
@@ -502,5 +502,8 @@ section h3 {
     float: none;
     width: 100%;
     margin-right: 0; } }
+@media screen and (max-width: 700px) and (orientation: landscape) {
+  .overlay {
+    overflow-y: scroll; } }
 
 /*# sourceMappingURL=style.css.map */

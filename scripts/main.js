@@ -6,7 +6,7 @@ $(document).ready(function() {
 		skillbars = $('.skillbar'),
 		links = $('#links'),
 		extra_nav = $('#myNav'),
-		close_btn = $('.closebtn')
+		close_btn = $('.closebtn'),
 		menu_btn = $('#menu_button'),
 		show_menu = $('header ul.main_nav');
 	
@@ -30,7 +30,7 @@ $(document).ready(function() {
 
 
 
-	if( $(window).width() > 400){
+	if( $(window).width() > 600){
 	links.click(openSideMenu);
 
 	}else{
@@ -50,9 +50,6 @@ $(document).ready(function() {
 
 	menu_btn.click(openMiniMainMenu);
 
-
-
-
 	function displaySkillLevel() {
 	skillbars.each(function(){
 		$(this).find('.skillbar-bar').animate({
@@ -71,5 +68,13 @@ $(document).ready(function() {
 			width: '43%'
 		}, 50);
 	}
+
+
+//just a quick fix for 'disappearing menu problem'
+	$(window).resize(function(){
+	if($(window).width() > 650){
+		$('nav>ul').removeAttr('style');
+	}
+});
 
 });
