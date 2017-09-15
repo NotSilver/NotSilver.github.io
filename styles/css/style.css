@@ -99,23 +99,6 @@ html, body {
 html::-webkit-scrollbar {
   display: none; }
 
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0; }
-
-.clearfix {
-  display: inline-table; }
-
-* html .clearfix {
-  height: 1%; }
-
-.clearfix {
-  display: block; }
-
 body {
   font-size: 15px;
   background-image: url("../../img/background/pattern/ep_naturalblack.png");
@@ -418,15 +401,14 @@ form {
   form input:not(:last-of-type) {
     width: 100%;
     height: 40px;
-    font-family: Arial;
-    font-weight: bold;
+    font-family: Verdana;
     font-size: 1.1rem; }
   form textarea {
     resize: none;
     width: 100%;
     height: 200px;
-    font-family: Arial;
-    font-size: 0.9rem; }
+    font-family: Verdana;
+    font-size: 1.1rem; }
   form input[type='submit'] {
     outline: none;
     margin: 0 auto;
