@@ -11,7 +11,7 @@ $(document).ready(function() {
 		show_menu = $('header ul.main_nav');
 	
 
-	ac_flaps.hide();
+	// ac_flaps.hide();
 
 	triggers.click(function() {
 		let find_article = $(this).next('div.ac_flap');

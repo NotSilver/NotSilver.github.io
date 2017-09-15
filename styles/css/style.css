@@ -102,7 +102,8 @@ html::-webkit-scrollbar {
 body {
   font-size: 15px;
   background-image: url("../../img/background/pattern/ep_naturalblack.png");
-  background-repeat: repeat; }
+  background-repeat: repeat;
+  background-color: #000; }
 
 .center {
   width: 80%;
@@ -231,6 +232,9 @@ h2 {
 
 article {
   padding-bottom: 10px; }
+
+article ul div.ac_flap {
+  display: none; }
 
 Iframe {
   width: 100%;
