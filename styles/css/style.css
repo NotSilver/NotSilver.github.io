@@ -439,6 +439,21 @@ section h3 {
   color: #fff;
   letter-spacing: 1px; }
 
+.contact_info {
+  margin: 15px auto;
+  color: #fff;
+  letter-spacing: 5px;
+  text-align: justify;
+  display: block;
+  width: 70%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 0 10px 10px;
+  font-size: 0.9rem;
+  font-family: Helvetica Verdana Arial;
+  font-weight: bold;
+  line-height: 1.1em;
+  box-shadow: 0 0 4px #aaa; }
+
 @media screen and (max-width: 600px) {
   .overlay {
     overflow-y: auto; }
@@ -477,8 +492,16 @@ section h3 {
     background: #000;
     letter-spacing: 3px; }
 
-  form {
+  form, .contact_info {
     width: 100%; }
+
+  .contact_info {
+    font-size: 1rem;
+    text-align: left;
+    word-wrap: break-word; }
+
+  .remv {
+    display: none; }
 
   section h3 {
     width: 100%;

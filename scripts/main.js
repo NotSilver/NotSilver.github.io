@@ -8,7 +8,8 @@ $(document).ready(function() {
 		extra_nav = $('#myNav'),
 		close_btn = $('.closebtn'),
 		menu_btn = $('#menu_button'),
-		show_menu = $('header ul.main_nav');
+		show_menu = $('header ul.main_nav'),
+		text_area = $('#email_msg');
 	
 
 	// ac_flaps.hide();
@@ -70,11 +71,21 @@ $(document).ready(function() {
 	}
 
 
-//just a quick fix for 'disappearing menu problem'
-	$(window).resize(function(){
-	if($(window).width() > 650){
-		$('nav>ul').removeAttr('style');
+	//just a quick fix for 'disappearing menu problem'
+		$(window).resize(function(){
+		if($(window).width() > 650){
+			$('nav>ul').removeAttr('style');
+		}
+	});
+	if(text_area){
+		text_area.keypress(function(){
+			if(this.value.includes('BTW,you can write your message here')){
+				this.value = '';
+			}
+			
+		});
 	}
-});
+
+
 
 });
