@@ -454,6 +454,14 @@ section h3 {
   line-height: 1.1em;
   box-shadow: 0 0 4px #aaa; }
 
+ul > li.contact_info > a {
+  text-decoration: none;
+  color: inherit;
+  text-indent: none; }
+
+ul > li.contact_info > a:hover {
+  color: #0000ff; }
+
 @media screen and (max-width: 600px) {
   .overlay {
     overflow-y: auto; }
