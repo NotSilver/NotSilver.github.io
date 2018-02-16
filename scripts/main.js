@@ -1,6 +1,5 @@
 $(document).ready(function() {
-	var isFirefox = typeof InstallTrigger !== 'undefined',
- 		animSpeed = 700;
+	// var isFirefox = typeof InstallTrigger !== 'undefined',
 	let ac_flaps = $('article ul div.ac_flap'),
 		triggers = $('article ul h3'),
 		sk_trig = $('.skills-trigger'),
@@ -10,7 +9,8 @@ $(document).ready(function() {
 		close_btn = $('.closebtn'),
 		menu_btn = $('#menu_button'),
 		show_menu = $('header ul.main_nav'),
-		text_area = $('#email_msg');
+		text_area = $('#email_msg'),
+		animSpeed = 700;;
 	
 
 	// ac_flaps.hide();
@@ -19,19 +19,18 @@ $(document).ready(function() {
 		let find_article = $(this).next('div.ac_flap');
 		let find_wrapper = $(this).closest('.center');
 
+		// if(isFirefox){
+		// 	animSpeed = 650;
+		// }
+
 		if(find_article.is(':visible')){
 				find_article.slideUp(300);
 		}else{
 			find_wrapper.find('div.ac_flap').slideUp(300);
 			find_article.slideDown(300);
-			$.scrollTo(e.target,animSpeed,{interrupt:true});
-		}
-
-		if(isFirefox){
-			animSpeed = 650;
-		}
-
-		
+			// $.scrollTo(e.target,animSpeed,{interrupt:true});
+			$.scrollTo(e.target,animSpeed);
+		}	
 	});
 
 
