@@ -1,5 +1,6 @@
 $(document).ready(function() {
-
+	var isFirefox = typeof InstallTrigger !== 'undefined',
+ 		animSpeed = 700;
 	let ac_flaps = $('article ul div.ac_flap'),
 		triggers = $('article ul h3'),
 		sk_trig = $('.skills-trigger'),
@@ -14,7 +15,7 @@ $(document).ready(function() {
 
 	// ac_flaps.hide();
 
-	triggers.click(function() {
+	triggers.click(function(e) {
 		let find_article = $(this).next('div.ac_flap');
 		let find_wrapper = $(this).closest('.center');
 
@@ -23,7 +24,14 @@ $(document).ready(function() {
 		}else{
 			find_wrapper.find('div.ac_flap').slideUp(300);
 			find_article.slideDown(300);
+			$.scrollTo(e.target,animSpeed,{interrupt:true});
 		}
+
+		if(isFirefox){
+			animSpeed = 650;
+		}
+
+		
 	});
 
 
